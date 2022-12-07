@@ -12,7 +12,7 @@ from keras.models import Sequential
 
 # Importing and Loading the data into a data frame
 
-dataset_path = r'C:\Users\Aniss\Desktop\train'
+dataset_path = r #PATH TO DATASET
 class_names = ['NORMAL','PNEUMONIA']
 
 # apply glob module to retrieve files/pathnames  
@@ -157,11 +157,11 @@ plt.show()
 #prediction
 
 
-sunflower_url = "https://prod-images-static.radiopaedia.org/images/1371188/0a1f5edc85aa58d5780928cb39b08659c1fc4d6d7c7dce2f8db1d63c7c737234_gallery.jpeg"
-sunflower_path = tf.keras.utils.get_file('Red_sunflower', origin=sunflower_url)
+img_url = "https://prod-images-static.radiopaedia.org/images/1371188/0a1f5edc85aa58d5780928cb39b08659c1fc4d6d7c7dce2f8db1d63c7c737234_gallery.jpeg" #IMAGE URL
+img_path = tf.keras.utils.get_file('1', origin=img_url)
 
 img = tf.keras.utils.load_img(
-    sunflower_path, target_size=(img_height, img_width)
+    img_path, target_size=(img_height, img_width)
 )
 img_array = tf.keras.utils.img_to_array(img)
 img_array = tf.expand_dims(img_array, 0) # Create a batch
