@@ -12,8 +12,8 @@ from keras.models import Sequential
 
 # Importing and Loading the data into a data frame
 
-dataset_path = r"C:\Users\Aniss\Desktop\Nouveau dossier (2)\chest_xray\test"
-class_names = ['NORMAL','PNEUMONIA']
+dataset_path = #path
+class_names = #catagories
 
 # apply glob module to retrieve files/pathnames  
 
@@ -155,14 +155,14 @@ model_json = model.to_json()
 with open("model.json", "w") as json_file:
     json_file.write(model_json)
 #serialize model to h5    
-model.save(r"C:\Users\Aniss\Desktop\Nouveau dossier (3)\model.h5",save_format="h5")
+model.save(r"#path",save_format="h5")
 print("saved model on disk")
 
 
 #prediction
 
 
-img_url = r"https://img.medscapestatic.com/pi/meds/ckb/58/16958tn.jpg" #IMAGE URL
+img_url = r"#urlpath" #IMAGE URL
 img_path = tf.keras.utils.get_file('1', origin=img_url)
 
 img = tf.keras.utils.load_img(
