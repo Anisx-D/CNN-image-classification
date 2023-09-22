@@ -1,1 +1,1 @@
-Image classification model with convolutional neural network(CNN)
+A python script for an image classifier with a convolutional neural network
